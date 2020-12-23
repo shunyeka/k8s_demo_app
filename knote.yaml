@@ -19,7 +19,7 @@ spec:
         - name: app
           image: learnitguide/knotejs:1.0
           ports:
-            - containerPort: 3002
+            - containerPort: 3000
           env:
             - name: MONGO_URL
               value: mongodb://mongo:27017/dev
@@ -36,6 +36,6 @@ spec:
 
   ports:
     - port: 80
-      targetPort: 3002
-      nodePort: 30002
+      targetPort: 3000
+      nodePort: 30000
   type: LoadBalancer
